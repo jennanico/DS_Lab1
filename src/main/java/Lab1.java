@@ -104,15 +104,12 @@ public class Lab1 {
 			   fib_sequence[1] = 1;
 		   }
 		   
-		   for (int i = 0; i < n; i++)
+		   for (int i = 0; i < n - 2; i++)
 		   {
-			   if (i != n && i < n - 1)
-			   {
-			   fib_sequence[n - i] = fib_sequence[(n - i) - 1] + fib_sequence[(n - i) - 2];
-			   }
+			  fib_sequence[i + 2] = fib_sequence[(i + 2) - 1] + fib_sequence[(i + 2) - 2]; 
 		   }
 		   
-		   return fib_sequence[n];
+		   return fib_sequence[n - 1];
 	   }
 
 }
